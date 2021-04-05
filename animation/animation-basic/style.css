@@ -1,0 +1,42 @@
+/* Animation */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+div {
+    position: relative;
+    top: 200px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    color: white;
+    background-color: cornflowerblue;
+    animation-name: animation-box;
+    /* 밑의 keframes의 name과 일치 해야한다. */
+    animation-duration: 2500ms;
+    /* 변화하는 시간 */
+    animation-timing-function: ease-in-out;
+    /* 변화의 속도 패턴 */
+    animation-iteration-count: infinite;
+    /* 변화 반복 횟수 */
+    animation-direction: alternate;
+    /* 시작(from)과 끝(to) 의 방향 조절 */
+}
+
+@keyframes animation-box {
+    /* from, to 뿐만 아니라 0%,50%,100% 방식으로도 조절 할 수 있다. */
+    from {
+        top: 200px;
+        background-color: cornflowerblue;
+    }
+
+    to {
+        top: 0px;
+        background-color: blue;
+    }
+}
