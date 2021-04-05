@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+}
+
+div:hover {
+    background-color: blue;
+    transition: background-color 1000ms cubic-bezier(.09,1.03,.99,-1.02) 1000ms;
+    /* transition은 요소가 부드럽게 변화되도록 한다. */
+    /* transition: 변화시킬 속성(transition-property)
+                시간(transition-duration) 
+                변화속도 패턴(transition-timing-function)
+                변화지연시간; (transition-delay)
+                순으로 작성한다. */
+    /* cubic-bezier를 만들 수 있는 사이트를 적극 이용하자. */
+}
