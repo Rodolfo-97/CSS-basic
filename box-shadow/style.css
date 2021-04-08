@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    color: white;
+    font-size: 30px;
+    width: 300px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+}
+
+.yes {
+    background-color: red;
+    margin-right: 20px;
+}
+
+.no {
+    background-color: blue;
+}
+/* 
+box-shadow
+그림자를 나타낼 떄 사용하는 속성이다.
+
+사용할 때는
+box-shadow: 그림자의 x축 위치(h-offset)
+            그림자의 y축 위치(v-offset)
+            그림자의 선명도(blur)
+            그림자의 크기(spread)
+            그림자의 색상(color, rgba를 사용하여 투명도도 함께 표현해주는 것이 좋다.)
+이 순서대로 작성해야 하며 spread값은 생략 가능하다.
+ */
+.yes:hover {
+    transition: box-shadow 250ms ease-out;
+    box-shadow: 10px 16px 20px 0 rgba(255, 0, 0, 0.5);
+}
+
+.no:hover {
+    transition: box-shadow 250ms ease-out;
+    box-shadow: 10px 16px 20px 0 rgba(0, 0, 255, 0.5);
+}
