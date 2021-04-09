@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.visibility {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50px;
+    width: 200px;
+    height: 200px;
+    background-color: tomato;
+    visibility: hidden;
+    /* 기본값은 visible이다. */
+    /* 
+    시각적으로 표현되지만 않지 요소는 본래의 자리에 존재한다.
+    display: none; 은 요소자체가 사라지는 것으로써 visibility: hidden; 과 차이가 있다.
+    */
+}
