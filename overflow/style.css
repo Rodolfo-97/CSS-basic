@@ -1,0 +1,56 @@
+/*
+overflow는 자식요소나 컨텐츠가 부모요소를 넘치게 될 때 넘친 부분을 처리할 때 쓰는 속성이다.
+값으로는 visible(기본값), auto, scroll, hidden 이 있다.
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.box1 {
+    background-color: blue;
+    width: 300px;
+    height: 200px;
+    margin-bottom: 50px;
+    /* height값을 고정했기 때문에 자식요소나 컨텐츠가 200height를 넘어도 height가 커지지 않고 고정된다. */
+    overflow: hidden;
+    /* 넘치는 부분을 숨긴다 */
+}
+
+.box2 {
+    background-color: blue;
+    width: 300px;
+    height: 200px;
+    margin-bottom: 50px;
+    overflow: visible; 
+     /* 기본값으로 부모요소를 자식요소나 컨텐츠가 넘치게 된다. */
+}
+
+.box3 {
+    background-color: blue;
+    width: 300px;
+    height: 200px;
+    margin-bottom: 50px;
+    overflow: scroll;
+    /* scroll을 만들어 넘치는 부분을 처리한다. */
+}
+
+.box4 {
+    background-color: blue;
+    width: 300px;
+    height: 200px;
+    margin-bottom: 50px;
+    overflow: auto;
+    /* scroll과 비슷하게 작동한다. */
+}
+
+.box5 {
+    background-color: blue;
+    width: 300px;
+    height: 200px;
+    margin-bottom: 50px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    /* overflow-x 와 overflow-y 로 가로와 세로를 따로 개별적으로 지정할 수 있다. */
+}
