@@ -14,6 +14,7 @@
     /* text끼리의 자간 */
     font-family: 글꼴1, 글꼴2, serif;
     /* 글꼴, 해당 글꼴이 없을 경우 순서대로 대체. */
+    /* 단어가 하나 이상이면 반드시 ""로 감싸준다. */
     font-weight: 400;
     /* text 굵기 */
     color: (0, 0, 0, 0.5);
@@ -26,7 +27,8 @@
 - px(절대 단위)
 
 - em(상대 단위)
-    - text에 적용된 font-size 기준. 
+    - text에 적용된 font-size 기준.
+    - text에 적용된 font0size가 없을 경우 부모요소의 font-size를 기준으로 한다.
 - rem(상대 단위)
     - text에 html 태그에 적용된 font-size 기준.
 
