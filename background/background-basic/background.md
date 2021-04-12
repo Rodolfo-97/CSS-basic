@@ -7,41 +7,41 @@
 #### background-color
 
 ```css
-.div {
+div {
     width: 300px;
     height: 300px;
     background-color: black;
     /* 배경 색 */
 }
 ```
-
-#### 배경 이미지와 관련된 속성들
+#### background-image
 
 ```css
-.div {
-    width: 300px;
-    height: 300px;
-    background-image: url("삽입할 이미지 경로")
-    /* 이미지 삽입 */
+div {
+    background-image: url("이미지의 경로")
+    /* div요소안에 배경으로 이미지가 들어감. 
+    이미지가 반복되는게 기본값. */
 }
 ```
 
-##### background-repeat
+##### background-image 와 관련된 속성들.
+
+###### background-repeat
 
 ```css
-.div {
+div {
     width:300px;
     height:300px;
     background-image: url("삽입할 이미지 경로")
     background-repeat: no-repeat;
-    /*  div 요소안에서 이미지 반복X */
+    /* 이미지 반복X  */
 }
 ```
 
-##### background-size
+###### background-size
 
 ```css
-.div {
+div {
     width: 300px;
     height: 300px;
     background-image: url("삽입할 이미지 경로")
@@ -53,17 +53,16 @@
 }
 ```
 
-##### background-position
+###### background-position
 
 ```css
-```css
-.div {
+div {
     width: 300px;
     height: 300px;
     background-image: url("삽입할 이미지 경로")
     background-position: center center;
-    /* x값,y값으로 이미지의 위치 설정*/
+    /* x값,y값으로 이미지의 위치 설정하고 %, px을 위치값으로 사용할 수 있다.*/
 }
 ```
-```
+
 
