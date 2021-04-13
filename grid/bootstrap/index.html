@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Grid System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <!-- bootstrap 프레임워크를 이용하기위해 삽입한 코드 -->
+</head>
+<body>
+    <div class="container">
+        <!-- 그리드 컨테이너의 기본 column은 12칸이다. -->
+        <!-- 반드시 .container 직계요소로 .row가 와야하고 .row의 직계요소로 .col-*이 와야한다.
+        우리가 만들고 싶은 요소는 .col-* 요소 안에 구현해주면 된다.-->
+        <div class="row">
+            <div class="col-1">
+                <p>col-1</p>
+            </div>
+            <div class="col-1">
+                <p>col-1</p>
+            </div>
+            <div class="col-1">
+                <p>col-1</p>
+            </div>
+            <div class="col-1">
+                <p>col-1</p>
+            </div>
+            <div class="col-1">
+                <p>col-1</p>
+            </div>
+            <div class="col-1">
+                <p>col-1</p>
+            </div>
+            <div class="col-1">
+                <p>col-1</p>
+            </div>
+            <div class="col-1">
+                <p>col-1</p>
+            </div>
+            <div class="col-1">
+                <p>col-1</p>
+            </div>
+            <div class="col-1">
+                <p>col-1</p>
+            </div>
+            <div class="col-1">
+                <p>col-1</p>
+            </div>
+            <div class="col-1">
+                <p>col-1</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 col-xl-2">
+                <!-- col-* - 항상 column이 *칸 만큼 차지함.
+                            - 더 구체적인 설정이 있으면 그 설정 우선한다.(여기서는 col-md-6과 col-xl-2)
+                    모바일 - 너비가 768px 미만인 화면 .col-sm-*
+                    태블릿 - 너비가 768px 이상인 화면 .col-md-*
+                    노트북 - 너비가 992px 이상인 화면 .col-lg-*
+                    노트북/데스크탑 - 너비가 1200px 이상인 화면 .col-xl-*
+                                    - 너비가 1400px 이상인 화면 .col-xxl-*
+                -->
+                <p>
+                    반응형 column
+                </p>    
+            </div>
+        </div>
+    </div>
+</body>
+</html>
