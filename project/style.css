@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* Reset Css */
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input,
+textarea {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+}
+
+button:focus,
+button:active,
+textarea:focus,
+textarea:active,
+input:focus,
+input:active {
+    outline: none;
+    box-shadow: none;
+    /* 요소들을 클릭했을때 포커싱 되는 css를 없애준다. */
+}
+
+ul,
+ol,
+li {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+    color: #2B292D;
+}
+
+.fill-button {
+    display: inline-flex;
+    /* button(여기선 flex container)를 인라인 요소로서 가로배치 시키고
+    안의 text를 가운데 배치하기 위해 선언. */
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 48px;
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: -0.05em;
+    font-weight: 700;
+    border-radius: 2px;
+    background-color: #3040C4;
+    color: white;
+    transition: opacity 250ms ease-in-out;
+}
+
+.fill-button:hover {
+    opacity: 0.5;
+}
+
+.fill-button.inverted {
+    background-color: #FFFFFF;
+    color: #3040C4;
+}
+
+/* Landing */
+
+.landing {
+    background-color:#FDDED8;
+    text-align: center;
+    /* grid 때문에 요소들은 가운데 정렬이 이미 된 상태임으로
+    text만 가운데 정렬해주면 된다. */
+}
+
+.landing-content {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.landing-title {
+    color: #2B292D;
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    margin-bottom: 24px;
+}
+
+.landing-desc {
+    margin-bottom: 20px;
+}
+
+.landing .button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing .button-group .fill-button:first-child {
+    margin-right: 8px;
+}
+
+/* 768px 이상 (Desktop) */
+
+@media screen and (min-width: 768px) {
+
+        /* Reset Css */
+
+    p {
+        font-size: 22px;
+        line-height: 1.3636363636;
+    }
+
+    /* landing */
+    
+    .landing-content {
+        height: auto;
+        padding: 120px 0;
+    }
+
+    .landing-title {
+        font-size: 70px;
+        line-height: 72px;
+        letter-spacing: -0.05em;
+        margin-bottom: 32px;
+    }
+
+    .landing-desc {
+        margin-bottom: 32px;
+    }
+
+    .fill-button {
+        width: 160px;
+        height: 56px;
+        font-size: 16px;
+        line-height: 1.5555555556;
+    }
+
+    .landing .button-group .fill-button:first-child {
+        margin-right: 16px;
+    }
+}
+
+/* Custom Grid System - Fix container width */
+
+@media screen and (min-width: 1200px) {
+    .container  {
+        max-width: 960px;
+    }
+}
