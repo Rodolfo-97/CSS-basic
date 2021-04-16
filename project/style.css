@@ -142,7 +142,84 @@ p {
     margin-bottom: 40px;
 } 
 
+/* Program */
 
+.program {
+    padding: 80px 0;
+}
+
+.mini-program {
+    color: #009B4D;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    margin-bottom: 8px;
+}
+
+.program-title {
+    font-size: 34px;
+    line-height: 36px;
+    letter-spacing: -0.03em;
+    margin-bottom: 24px;
+}
+
+.program-desc {
+    margin-bottom: 32px;
+}
+
+.campusImg,.remoteImg,.flexImg {
+    border-radius: 8px;
+    box-shadow: 1px 0 3px 0 rgba(58, 53, 50, 0.2);
+    position: relative;
+    height: 291px;
+    background-repeat: no-repeat;
+    background-position: center 24px;
+}
+
+.campusImg {
+    background-image: url(./assets/img-fulltime-campus.png);
+    background-size: auto 195px;
+    margin-bottom: 20px;
+}
+
+.campusImg h1 {
+    position: absolute;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    left: 52px;
+    bottom: 32px;
+}
+
+.remoteImg {
+    background-image: url(./assets/img-fulltime-remote.png);
+    background-size: auto 195px;
+    margin-bottom: 20px;
+}
+
+.remoteImg h1 {
+    position: absolute;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    left: 69px;
+    bottom: 32px;
+}
+
+.flexImg {
+    background-image: url(./assets/img-parttime-flex.png);
+    background-size: auto 195px;
+}
+
+.flexImg h1 {
+    position: absolute;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    left: 84px;
+    bottom: 32px;
+}
 
 /* 768px 이상 (Desktop) */
 
@@ -183,7 +260,7 @@ p {
     .landing .button-group .fill-button:first-child {
         margin-right: 16px;
     }
-    /* desktop */
+    /* testmonials */
 
     .testmonials-title {
         font-size: 26px;
@@ -197,7 +274,40 @@ p {
 
     .testmonials .col-12:first-child {
         margin-bottom: 0;
-    } 
+    }
+
+    /* program */
+
+    .program {
+        text-align: center;
+        padding-bottom: 96px;
+    }
+
+    .mini-program {
+    font-size: 22px;
+    margin-bottom: 16px;
+    }
+
+    .program-title {
+        font-size: 56px;
+        line-height: 56px;
+        letter-spacing: -0.03em;
+        margin-bottom: 32px;
+    }
+
+    .program-desc {
+        font-size: 22px;
+        line-height: 32px;
+        margin-bottom: 72px;
+    }
+
+
+
+    .campusImg,.remoteImg,.flexImg {
+        margin-bottom: 0;
+        height: 299px;
+    }
+
 
 }
 
