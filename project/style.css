@@ -94,6 +94,10 @@ p {
     letter-spacing: -0.03em;
 }
 
+.section-desc {
+    margin-bottom: 32px;
+}
+
 /* Landing */
 
 .landing {
@@ -164,9 +168,9 @@ p {
 
 /* Program */
 
-.program .row:first-child {
+/* .program .row:first-child {
     margin-bottom: 32px;
-}
+} */
 
 .program .section-category {
     color: #009B4D;
@@ -226,7 +230,27 @@ p {
 
 /* curriculum */
 
+.curriculum .row:first-child {
+    margin-bottom: 48px;
+}
 
+.curriculum .section-category {
+    color: #0189D1;
+}
+
+.curriculum-detail-desc {
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.01em;
+}
+
+.curriculum .row:last-child div:first-child {
+    margin-bottom: 40px;
+}
+
+.curriculum-image {
+    display: none;
+}
 
 /* 768px 이상 (Desktop) */
 
@@ -318,6 +342,36 @@ p {
     .program-card strong {
         font-size: 20px;
         line-height: 1.2;
+    }
+
+    /* curriculum */
+
+    .curriculum .section-desc {
+        margin-bottom: 72px;
+    }
+
+    .curriculum-detail-desc {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .curriculum-image {
+        display: block;
+        /* 모바일에서는 image가 안보이지만 데스크탑에서는 보이게 하기위해 작성한 코드 */
+    }
+
+    .curriculum-image img {
+        width: 100%;
+        max-width: 450px;
+        /* 이미지의 폭은 width의 100%를 쓰지만 최대 450px을 넘지 못한다. */
+    }
+
+    .curriculum .row:first-child {
+        margin-bottom: 24px;
+    }
+
+    .curriculum .row:last-child div:first-child {
+        margin-bottom: 0;
     }
 }
 
