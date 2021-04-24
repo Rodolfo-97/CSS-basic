@@ -19,6 +19,7 @@ input,
 textarea {
     font-family: 'DM Sans', sans-serif;
     font-size: 16px;
+    /* input 과 textarea 요소의 입력값과 button의 text의 font를 설정해줌 */
 }
 
 button:focus,
