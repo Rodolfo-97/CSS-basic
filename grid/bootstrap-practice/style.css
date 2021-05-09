@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.tema1 p {
+    font-weight: 700;
+    padding: 5px 0;
+    background-color: #0066ff;
+    color: #fff;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.tema2 p{
+    font-weight: 700;
+    padding: 5px 0;
+    background-color: #C01A39;
+    color: #fff;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.tema3 p {
+    font-weight: 700;
+    padding: 5px 0;
+    background-color: #C7D721;
+    color: #fff;
+    border-radius: 8px;
+    text-align: center;
+}
