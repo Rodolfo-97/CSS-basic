@@ -15,10 +15,12 @@
 <body>
     <div class="container">
         <!-- 그리드 컨테이너의 기본 column은 12칸이다. -->
-        <!-- 반드시 .container 직계요소로 .row가 와야하고 .row의 직계요소로 .col-*이 와야한다.
+        <!-- 반드시 .container 직계요소로 .row가 와야하고 .row의 직계요소로 .col-*이 와야 한다.
+            - > container > row > col 구조 사이에 다른 태그들을 넣으면 에러가 발생할 수 있다.
         우리가 만들고 싶은 요소는 .col-* 요소 안에 구현해주면 된다.-->
         <div class="row">
             <div class="col-1">
+                <!-- column에는 gutter라는 15px 먼큼의 좌우 padding이 있다. -->
                 <p>col-1</p>
             </div>
             <div class="col-1">
